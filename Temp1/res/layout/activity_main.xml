@@ -1,0 +1,93 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+    
+    	<!-- ФИО -->
+		<EditText android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+    	android:inputType="textCapWords"
+        android:hint="@string/MActiviry_edit_message" />
+	
+		<!-- Дата рождения -->
+		<EditText android:id="@+id/edit_message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="@string/MActiviry_edit_message2"
+        android:focusableInTouchMode="false"
+        android:background="@android:drawable/btn_dropdown"
+        android:onClick="showDatePickerDialog" 
+        android:layout_marginLeft="10dp"
+        />
+		<!-- style="@android:style/Widget.DeviceDefault.Light.Spinner" for 14 API-->
+		
+
+		<Button
+	        android:id="@+id/btnSpinnerSex"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:gravity="left|center_vertical"
+	        android:singleLine="true"
+	        android:hint="@string/selectSex" 
+	        android:background="@android:drawable/btn_dropdown"
+	        android:layout_marginLeft="10dp"    
+	        >
+	        <!-- style="@android:style/Widget.DeviceDefault.Light.Spinner" For 14 Api -->
+        
+    	
+	    </Button>
+			
+	<!-- 		android:background="@android:drawable/btn_dropdown"  For 9 Api-->
+			
+		<!-- Должность -->
+		<EditText android:id="@+id/edit_message4"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:inputType="textCapSentences"
+	    android:hint="@string/MActiviry_edit_message4" />
+			
+		<!-- Зарплата -->	
+		<EditText android:id="@+id/edit_message5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:hint="@string/MActiviry_edit_message5" />
+			
+		<!-- Телефон -->			
+		<EditText android:id="@+id/edit_message6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:hint="@string/MActiviry_edit_message6" />
+			
+		<!-- Электронная почта -->					
+		<EditText android:id="@+id/edit_message7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/MActiviry_edit_message7" />
+		
+		<!-- Отправить -->
+		<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/MActiviry_button_send" 
+        android:onClick="sendMessage" />
+		
+ 	</LinearLayout>
+ </ScrollView>

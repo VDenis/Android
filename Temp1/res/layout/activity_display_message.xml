@@ -1,0 +1,81 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:focusable="true" android:focusableInTouchMode="true"
+		android:orientation="vertical">
+	
+			<TextView android:id="@+id/text_message"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background"
+	        android:textSize="18sp"
+	        android:hint="@string/DMActivity_hint_text_message" />
+		
+			<TextView android:id="@+id/text_message2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background"
+	        android:textSize="18sp"
+	        android:hint="@string/DMActivity_hint_text_message2" />
+			
+			<TextView android:id="@+id/text_message3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background"
+	        android:textSize="18sp"
+	        android:hint="@string/DMActivity_hint_text_message3" />
+			
+			<TextView android:id="@+id/text_message4"
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/editbox_background"
+			android:textSize="18sp"
+	        android:hint="@string/DMActivity_hint_text_message4" />
+					
+			<TextView android:id="@+id/text_message5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background"
+	        android:textSize="18sp"
+	        android:hint="@string/DMActivity_hint_text_message5" />
+							
+			<TextView android:id="@+id/text_message6"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background" 
+	        android:textSize="18sp"
+	        android:autoLink="phone"
+	        android:hint="@string/DMActivity_hint_text_message6" />
+									
+			<TextView android:id="@+id/text_message7"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:background="@android:drawable/editbox_background"
+	        android:textSize="18sp"
+	        android:autoLink="email"
+	        android:hint="@string/DMActivity_hint_text_message7" />
+	
+			<EditText android:id="@+id/edit_message8"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:inputType="textMultiLine"
+	        android:lines="5"
+	        android:hint="@string/DMActivity_hint_text_message8" />
+					
+			<Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:text="@string/DMActivity_button_send" 
+	        android:onClick="sendMessage"> </Button>
+			
+	
+	    
+	 </LinearLayout>
+</ScrollView>
